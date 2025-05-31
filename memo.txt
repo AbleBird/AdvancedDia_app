@@ -1,1 +1,137 @@
+#How to write
 
+#Text Block 1
+AdvancedDia_version: 1.0
+
+#Text Block 2
+Map name: Ogawa Railway
+Number of lines: 4
+
+#Text Block 3
+Line1_name: O line
+Line2_name: T line
+Line3_name: N line
+Line4_name: P line
+DownDiaAlias=Down
+UpDiaAlias=Up
+
+#Text Block 4
+TrainType_Definition
+Classification_Method=2
+Classification_1
+Target_Line=1, 2, 3
+TrainTypes=13
+TrainType1=Rapid Limited Express
+TrainType_Abbrebiation=R.L.E
+TimeTableTextColor=001400C8
+TimeTableFontIndex=0
+TimeTableBackgroundColor=00FFFFFF
+DiagramLineColor=001400C8
+DiagramLineStyle=Solid_line
+StopMarkDrawType=EStopMarkDrawType_DrawOnStop
+ParentTrainType_Setting=1-1
+
+TrainType2=Limited Express
+TrainType_Abbreviation=L.Exp
+TrainTypeTextColor=000000FF
+TimeTableFontIndex=0
+TimeTableBackgroundColor=00FFFFFF
+DiagramLineColor=000000FF
+DiagramLineStyle=Solid_line
+StopMarkDrawType=EStopMarkDrawType_DrawOnStop
+ParentTrainType_Setting=1-Parent
+
+TrainType3=Sub-Limited Express
+TrainType_Abbreviation=Sb.L.E
+timeTabletextColor=00C800FA
+TimeTableFontIndex=0
+TimeTableBackgroundColor=00FFFFFF
+DiagramLineColor=00C800FA
+DiagramLineStyle=Solid_line
+StopMarkDrawType=EStopMarkDrawType_DrawOnStop
+ParentTrainType_Setting=1-2
+
+...
+
+TrainType5=Rapid Express
+TrainType_Abbreviation=R.Exp
+TimeTableTextColor=00C800C8
+TimeTableFontIndex=0
+TimeTable_BackgroundColor=00FFFFFF
+DiagramLineColor=000000FF
+DiagramLineStyle=Solid_line
+StopMarkDrawType=EStopMarkDrawType_DrawOnStop
+ParentTrainType_Setting=2_Parent
+
+
+TrainType7=Express
+...
+
+TrainType9=Sub-Express
+...
+
+TrainType11=Semi-Express
+...
+
+TrainType12=Local
+...
+
+TrainType13=Out-of-service Train
+...
+
+Classification_2
+Target_line=4
+
+#Text Block 5
+Stations_Line1
+Number_of_Stations=73
+Station1
+StationName=Sanzeki
+StationName_Abbreviation=Sanzeki
+Station_Number=O_01
+StationTime_Format=UpArrival
+StationScale=Main
+Number_of_Tracks=4
+DownMain=1
+UpMain=4
+TimeTableTrackDisplay_Down=1
+TimeTableTrackDisplay_Up=1
+DiagramTrackDisplay=1
+
+StationTrack2Cont.
+StationTrack2.
+TransitLine_Setting=No
+TrackName=Track 1
+TrackName_Abbreviation=1
+
+StationTrack2.
+TransitLine_Setting=No
+TrackName=Track 2
+TrackName_Abbreviation=2
+
+StationTrack2.
+TransitLine_Setting=No
+TrackName=Track 3
+TrackName_Abbreviation=3
+
+StationTrack2.
+TransitLine_Setting=No
+TrackName=Track 4
+TrackName_Abbreviation=4
+
+TimeTable_TimeDisplay_Down=0,1
+TimeTable_TimeDisplay_Up=1,0
+JikokuhyouSyubetsuChangeDisplayKudari=0,0,0,0,1
+TimeTable_TrainTypeChangeDisplay_Up=0,0,0,0,1
+DiagramColor_NextStation=0
+OperationTable_DisplayTime=1
+TimeTableOuterDisplay_Down=0,0
+TimeTableOuterDisplay_Up=0,0 
+
+    #if TransitLine_Setting=Yes, 
+    TransitLine_Setting=Yes
+    TransitLineName=Transit Line - Down
+    TransitLineName_Abbreviation=D
+    or 
+    TransitLineName=Transit Line - Down(Outer)
+    TransitLineName_Abbreviation=D.O

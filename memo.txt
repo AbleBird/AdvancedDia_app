@@ -1,4 +1,4 @@
-#How to write
+#How to write record file
 
 #Text Block 1
 AdvancedDia_version: 1.0
